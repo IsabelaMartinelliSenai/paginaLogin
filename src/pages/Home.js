@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 // IMPORT STYLES
 import { styles } from "../styles/styles";
@@ -10,9 +10,11 @@ import AntDesign from "@expo/vector-icons/AntDesign"
 import Feather from '@expo/vector-icons/Feather';
 
 export default function Home() {
+  const img = require("../img/backgroundLogin.jpg")
+
   const navigation = useNavigation()
   return (
-    <View style={styles.container}>
+    <ImageBackground style={styles.container} source={img}>
       <TouchableOpacity
         style={{
           width: 48,
@@ -34,6 +36,6 @@ export default function Home() {
         color: "#618baf",
         fontSize: 50,
       }}>PÁGINA HOME</Text>
-    </View>
+    </ImageBackground>
   );
 }
