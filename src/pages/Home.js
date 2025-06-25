@@ -10,7 +10,7 @@ import AntDesign from "@expo/vector-icons/AntDesign"
 import Feather from '@expo/vector-icons/Feather';
 
 export default function Home() {
-  const img = require("../img/background.jpg")
+  const img = require("../img/bgPage.jpg")
 
   const navigation = useNavigation()
   return (
