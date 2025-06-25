@@ -25,7 +25,7 @@ export default function Login() {
     }
   }
   return (
-    <ImageBackground style={styles.img} source={require("../img/backgroundLogin.jpg")}>
+    <ImageBackground style={styles.img} source={require("../img/background.jpg")}>
       <TouchableOpacity
         style={{
           width: 48,
